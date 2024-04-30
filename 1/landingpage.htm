@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing_Page</title>
+    <style>
+        body {
+            font-family: "Cambria, Cochin, Georgia, Times, 'Times New Roman', serif";
+            margin: 0;
+            padding: 0;
+        }
+ 
+        #web {
+            border: 2px solid green;
+            border: 10px solid green;
+            width: 1000px;
+            height: 2250px;
+            margin: auto;
+            position: relative;
+        }
+        #new{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding-top:20px;
+            padding-bottom: 0px;
+        }
+
+        #nav {
+            font-style: normal;
+            color: white;
+            margin-left: 15px;
+            margin-right: 15px;
+            margin-top: 25px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            background-color: black;
+            padding: 7px;
+        }
+        #nav li:hover{
+            color:green;
+        }
+
+        .font {
+            font-size: 40px;
+            font-family:"Cambria, Cochin, Georgia, Times, 'Times New Roman', serif";
+            margin: 0;
+            padding-left: 3px;
+            text-shadow: 2px 2px 5px lightseagreen;
+        }
+
+        .phone-container {
+            display: flex;
+            padding-top: 8px;
+        }
+
+        .highlighted-text {
+            background-color: lightcyan;
+            border-radius: 5px;
+            padding: 0 5px; /* Adjust padding as needed */
+        }
+
+        .phone-img {
+            width: 30px;
+            height: 30px;
+            margin-right: 14px;
+            padding-left: 9px;
+        }
+
+        .phone-details {
+            display: flex;
+            flex-direction: column;
+            line-height: 3.7px;
+        }
+
+        .phone-details div {
+            margin: 5px 0;
+        }
+
+        .x {
+            border-radius: 15px;
+            width: 300px;
+            height: 40px;
+            padding-right: 50px;
+            font-size: 15px;
+            margin-left: 95px;
+        }
+        .y{
+            position: absolute; 
+            top: 180px; 
+            right: 420px; 
+            border-radius: 100px;
+            width: 100px;
+            height: 100px;
+            padding: 10px 10px; 
+            font-size: 15px;
+            margin-top: 650px;
+            color: white;
+            background-color: black;
+        }
+
+        #grad{
+            height: 550px;
+            padding-top: 1000px;
+            width: 780px;
+            background-color: green;
+            background-image: radial-gradient(red, yellow, green);
+        }
+        .centered{
+            text-align: center;
+            position: relative;
+            background-repeat: no-repeat;
+            background-image: url("https://media.istockphoto.com/id/1157106624/photo/all-your-necessities-stored-in-one-place.jpg?s=1024x1024&w=is&k=20&c=8Wpn6NRdkVmXtR5jxGmxnyqu_wY3kF6yMMXWHla0t5Y=");
+        }
+
+        #content{
+             display:flex;
+        }
+        .box{
+            margin:20px;
+            border:2px solid green;
+            border-radius:5px;
+            height:200px;
+            margin-top:10px;
+            background-color: rgb(244, 254, 228);
+            box-shadow: 0px 6px 10px rgba(90, 26, 26, 0.1);
+        }
+
+        .order-btn {
+            background-color: red;
+            color: white;
+            border: 10px double solid black;
+            padding: 15px 15px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            align-self: auto;
+            font-size: 16px;
+            cursor: pointer;
+            width: auto;
+            height: auto;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            animation: blink 3s infinite;
+            font-size: 20px;
+            padding: auto;
+            margin: 0px;
+        }
+
+        .order-btn:hover {
+            background-color: #cc0000;
+        }
+
+        @keyframes blink {
+            0% {
+                opacity: 0;
+            }
+            50% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+            }
+        }
+
+        h1{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .but {
+            background-image: url("https://assets-global.website-files.com/5a9ee6416e90d20001b20038/5f5f6931fb40a4a661c07dcc_Random%20Symbols%20Generator%20(2).png");
+            background-size: cover;
+            width: 40px;
+            height: 40px;
+            border: none;
+            cursor: pointer;
+            border-radius: 25px;
+            margin-right: 7px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="web">
+        <div id="new">
+            <h1 class="font"><span class="highlighted-text">MiniShop Mart</span></h1>
+            <div class="phone-container">
+                <img class="phone-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQf-YWTwz6jRj60rcJQ0aqVPmXnn8Oc9ePkdoTamXzTKw&s" alt="Phone Icon">
+                <div class="phone-details">
+                    <div><b>123-234-345</b></div>
+                     <div>Free call support</div>
+                </div>
+            </div>
+          <input class="x" type="text" placeholder="Search your products..">
+          <button class="but" type="submit"></button>
+        </div>
+        <div id="nav">
+            <li><b>ALL CATEGORIE</b></li>
+            <li><b>HOME</b></li>
+            <li><b>SHOP</b></li>
+            <li><b>MEATS & SEAFOOD</b></li>
+            <li><b>BEST OFFERS</b></li>
+            <li><img src="https://t4.ftcdn.net/jpg/00/65/77/27/240_F_65772719_A1UV5kLi5nCEWI0BNLLiFaBPEkUbv5Fv.jpg" style="width: 20px; height: 20px; align-items: right;"><b>Login/Register</b></li>
+        </div>
+        <div class="centered">
+            <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSkAHLBtpmZA8S56aOin73rIbbtoACpsEVrGqeEv2OycRCP96-r" style="height: 400px; width: 420; padding-top: 680px;"><b><input class="y" type="text" value="30%OFF" class="highlighted-text"></b> 
+        </div>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="order-btn" href="https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwiwgaah6emFAxXSyzwCHfG_BpEYABAAGgJzZg&ase=2&gclid=CjwKCAjwrcKxBhBMEiwAIVF8rH7fy-ouSJNUbHE3IHv4daAgrap6Jn172CloAsNGThDRw6mGRwS2CRoC_dIQAvD_BwE&ohost=www.google.com&cid=CAESVuD2uzhdGN7bBgxZDLvsnnu-4UHvUJAnQ_XJKU0TIriIc1mJkn9Z2VxKR8Rc2zBMig_o8DlBwO6SAiqyH3IU3pLAygGpt54Ltl3e5_crmTFm8WcQmmho&sig=AOD64_0SYVN14K-mP8KiH7X3rCeDmPaOcQ&q&nis=4&adurl&ved=2ahUKEwiA6p6h6emFAxW3cGwGHc8wDssQ0Qx6BAgVEAE">Order Now</button>
+        <div id="content">
+                <div class="box">
+                    <h1>&nbsp;Best Deals and Offers Available!</h1>
+                    <h4>&nbsp;&nbsp;Lorem ipsum dolor sit amet &nbsp;&nbsp;consectetur adipisicing elit.</h4>
+                </div>
+                <div class="box">
+                    <h1>&nbsp;Always FRESH!!</h1>
+                    <h4>&nbsp;&nbsp;Lorem ipsum dolor sit amet &nbsp;&nbsp;consectetur adipisicing elit.
+                        &nbsp;&nbsp;Accusamus, quis.</h4>
+                </div>
+                <div class="box">
+                    <h1>&nbsp;100% Natural</h1>
+                    <h4>&nbsp;&nbsp;Lorem ipsum dolor sit amet &nbsp;&nbsp;consectetur adipisicing elit.
+                        &nbsp;&nbsp;Accusamus, quis.</h4>
+                </div>
+        </div>
+        <div class="last">
+            <div class="font" style="font-size: 39;">ABOUT US</div>
+            <h3>Welcome to FreshHarvest Mini-Mart!</h2>
+At FreshHarvest Mini-Mart, we're passionate about delivering the freshest and highest quality fruits and vegetables right to your doorstep. With years of experience in the agricultural industry, we've cultivated strong relationships with local farmers to ensure that every product we offer meets our strict standards for freshness, taste, and sustainability.
+
+<h3>Our Mission</h3>
+Our mission is simple: to make healthy eating convenient and accessible for everyone. We believe that by providing a wide selection of farm-fresh produce, we can inspire our customers to lead healthier lives and support local farmers in the process.
+
+<h3>What Sets Us Apart</h3>
+<h4>Freshness Guaranteed: </h4>We handpick every item to ensure that only the freshest produce makes it to your table.
+<h4>Locally Sourced:</h4> We prioritize sourcing from local farms to support our community and reduce our environmental footprint.
+<h4>Variety:</h4> From seasonal favorites to exotic finds, we offer a diverse range of fruits and vegetables to satisfy every palate.
+<h4>Convenience:</h4> Skip the trip to the grocery store and order from the comfort of your home. With our user-friendly online platform, shopping for fresh produce has never been easier.
+Our Commitment to Quality
+We understand that quality is paramount when it comes to fresh produce. That's why we go above and beyond to maintain the highest standards of quality and safety at every step of the journey, from farm to fork. Whether you're stocking up on essentials or trying something new, you can trust that every item in your order has been carefully selected and inspected for optimal freshness and flavor.
+
+Get in Touch
+Have a question or special request? Our dedicated customer service team is here to help! Feel free to reach out to us via phone, email, or live chat, and we'll be happy to assist you.
+
+<b>Thank you for choosing FreshHarvest Mini-Mart for all your fruit and vegetable needs. We look forward to serving you!</b>
+        </div>
+    </div>
+</body>
+</html>

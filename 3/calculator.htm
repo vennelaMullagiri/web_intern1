@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <style>
+    body {
+        font-family: Arial, sans-serif;
+        background-image: url("https://www.shutterstock.com/shutterstock/photos/1877801464/display_1500/stock-photo-gradient-color-basic-math-operation-symbols-and-geometry-shape-on-white-background-d-render-1877801464.jpg");
+        background-size: cover; /* Cover the entire viewport */
+        background-position: center; /* Center the background image */
+        margin: 0;
+        padding: 0;
+    }
+
+    .calculator {
+      max-width: 280px;
+      margin: 60px auto;
+      padding: 30px;
+      background-color: black;
+      border-radius: 15px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    input[type="text"] {
+      width: calc(100% - 3px);
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 5px solid whitesmoke;
+      border-radius: 8px;
+      font-size: 25px;
+      text-align: right;
+      box-sizing: border-box;
+    }
+
+    button {
+      width: 50px;
+      height: 50px;
+      margin: 5px;
+      font-size: 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      background-color: darkgrey;
+    }
+
+    button:hover {
+      background-color: rgb(66, 160, 233);
+    }
+
+    button:active {
+      background-color: #ccc;
+    }
+
+    .clear{
+      background-color: red;
+    }
+  </style>
+</head>
+<body>
+  <div class="calculator">
+    <b><input type="text" id="display" readonly>
+    <br>
+    <button onclick="appendNumber('7')">7</button>
+    <button onclick="appendNumber('8')">8</button>
+    <button onclick="appendNumber('9')">9</button>
+    <button onclick="appendNumber('/')" style="background-color:rgb(53, 202, 251);">/</button>
+    <br>
+    <button onclick="appendNumber('4')">4</button>
+    <button onclick="appendNumber('5')">5</button>
+    <button onclick="appendNumber('6')">6</button>
+    <button onclick="appendNumber('*')" style="background-color:rgb(53, 202, 251);">*</button>
+    <br>
+    <button onclick="appendNumber('1')">1</button>
+    <button onclick="appendNumber('2')">2</button>
+    <button onclick="appendNumber('3')">3</button>
+    <button onclick="appendNumber('-')" style="background-color:rgb(53, 202, 251);">-</button>
+    <br>
+    <button onclick="appendNumber('0')">0</button>
+    <button onclick="appendNumber('%')" style="background-color:rgb(53, 202, 251);">%</button>
+    <button onclick="appendNumber('+')" style="background-color:rgb(53, 202, 251);">+</button>
+    <button onclick="calculate()" style="background-color:rgb(104, 233, 104);">=</button>
+    <br>
+    <button onclick="clearDisplay()" class="clear">C</button></b>
+  </div>
+  <script>
+    function appendNumber(value) {
+      document.getElementById('display').value += value;
+    }
+
+    function clearDisplay() {
+      document.getElementById('display').value = '';
+    }
+
+    function calculate() {
+      const displayValue = document.getElementById('display').value;
+      
+      try {
+        // Use a safer evaluation method (e.g., Function constructor)
+        const result = new Function('return ' + displayValue)();  
+        document.getElementById('display').value = result;
+      } catch (error) {
+        console.error("Error during evaluation:", error);
+        document.getElementById('display').value = 'Error';
+      }
+    }
+
+  </script>
+</body>
+</html>
